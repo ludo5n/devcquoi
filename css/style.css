@@ -1,0 +1,793 @@
+
+/* ------------------------AUTRES---------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#wrapper {
+    margin: auto;
+    width:63.1%;
+    text-align: center;
+    background-color:rgb(185, 184, 184);   
+}
+body{
+    background-color:rgb(185, 184, 184);
+}
+
+h1,h2,h3{
+    font-family: Patua One, cursive;
+}
+p{
+    font-family: Halant, serif;
+}
+#icone-yt{
+    width:50px;
+}
+.titre-page{
+    margin: 15px;
+    widows: 100%;
+    background-color: rgb(120, 214, 218);
+}
+#image img{
+    width:100%;
+}
+#titre1{
+    width:100%;
+    margin:20px;
+}
+   /* a:active{
+background-color:red; */
+#fullstack img {
+    width:100%;
+}
+#banner-fullstack{
+    width: 100%;
+    height: 350px;
+}
+
+/* ----------------------------------HEADER----------------------------------- */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: rgb(0, 0, 0); */
+    background-image:linear-gradient(to right, black, white);
+}
+
+
+header img{
+    padding: 15px 0 15px 20px;
+    -webkit-filter: grayscale(0) blur(0px);
+    filter: grayscale(0) blur(0px);
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+header img:hover{
+    border-radius: 50%;  /* on arrondit l'image */
+    -webkit-transform: rotate(360deg); /* rotation de l'image */
+    transform: rotate(360deg);
+}
+/* ----------------------------------------------------------------------- */
+/* Style the buttons */
+.btn {
+    border: none;
+    outline: none;
+    padding: 10px 16px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+  }
+  
+  #myDIV .btn a{
+      text-decoration: none;
+      color: rgb(54, 54, 54);
+  }
+
+  /* Style the active class (and buttons on mouse-over) */
+  .active, .btn:hover{
+    background-color: #666;
+    color: white;
+  }
+
+/* --------------------------------------------------------------------------- */
+
+
+/* nav a{
+    margin-right: 25px;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    font-size: 35px;
+    padding: 7px;
+} */
+.topnav {
+    overflow: hidden;
+  }
+  
+  /* .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  } */
+  
+  /* .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  } */
+  
+  /* .topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+  } */
+  
+  .topnav .icon {
+    display: none;
+  }
+
+/* ---------------------------------MAIN----------------------------- */
+
+
+
+
+/* 
+--------------banniere------------------- */
+#banner img:hover{ 
+	opacity: 1;
+	-webkit-animation: flash 1.5s;
+	animation: flash 1.5s;
+}
+
+@-webkit-keyframes flash {
+	0% {
+		opacity: .4;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes flash {
+	0% {
+		opacity: .4;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+
+/* --------------BOUTON HOME SOUS BANNIERE------------------- */
+/* @import "compass/css3";
+
+@import url(https://fonts.googleapis.com/css?family=Finger+Paint);
+
+#boutton-redirection #button-design a{
+  background: black;
+  overflow: hidden;
+  font: 5vw/100vh "Finger Paint";
+  text-align: center;
+  color: transparent;
+  backface-visibility: hidden;
+}
+
+span {
+  display: inline-block;
+  text-shadow: 0 0 0 rgb(0, 0, 0);
+  animation: smoky 4s 2s both;
+}
+
+span:nth-child(even){
+  animation-name: smoky-mirror;
+}
+
+@keyframes smoky {
+  60% {
+    text-shadow: 0 0 40px whitesmoke;
+  }
+  to {
+    transform:
+      translate3d(15rem,-8rem,0)
+      rotate(-40deg)
+      skewX(70deg)
+      scale(1.5);
+    text-shadow: 0 0 20px whitesmoke;
+    opacity: 0;
+  }
+}
+
+@keyframes smoky-mirror {
+  60% {
+    text-shadow: 0 0 40px whitesmoke; }
+  to {
+    transform:
+      translate3d(18rem,-8rem,0)
+      rotate(-40deg) 
+      skewX(-70deg)
+      scale(2);
+     text-shadow: 0 0 20px whitesmoke;
+    opacity: 0;
+  }
+}
+
+@for $item from 1 through 21 {
+  span:nth-of-type(#{$item}){ 
+    animation-delay: #{(3 + ($item/10))}s; 
+  }
+}  */
+
+/* ------------------------------------------------------fin animation texte */
+
+#boutton-redirection div img{
+width:auto;
+ display: flex;
+ flex-direction: row;
+ 
+}
+
+#boutton-redirection{
+    display: flex;
+    flex-direction: wrap;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#boutton-redirection button {
+    font-size: 60px;
+    height: 300px;
+    width:400px;
+    padding: 10px;
+    border:3px solid transparent;
+    
+
+    
+}
+#boutton-redirection a{
+    text-decoration: none;
+    color: black; 
+
+
+}
+
+
+#button-dev{
+    background:url(../img/web-dev.jpg)center/cover no-repeat;
+    
+}
+#button-dev:hover:not(a){
+    background:url(../img/web-dev.jpg)center/cover no-repeat;
+    opacity: 0.75;
+
+}
+#button-dev:hover{
+    cursor: pointer;
+    border:3px solid black;
+    box-shadow: 10px 10px 15px black;
+    
+
+}
+#button-design{
+    background:url(../img/webdesign.png)center/cover no-repeat;
+    color: rgb(black);
+}
+#button-design:hover{
+    cursor: pointer;
+    border:3px solid black;
+    background-color: rgba(8, 31, 90,0.33);
+    box-shadow: 10px 10px 15px black;
+}
+
+#button-full{
+    background:url(../img/front-back-end.png)center/cover no-repeat;
+}
+#button-full:hover{
+    cursor: pointer;
+    border:3px solid black;
+    box-shadow: 10px 10px 15px black;
+
+}
+
+
+
+
+
+/* ---------------Formulaire--------------------- */
+
+#conteneur-titre-form{
+    background-color: rgb(184, 164, 164);
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+}
+
+
+#conteneur-titre-form p {
+    color: white;
+    margin-top:7px;
+}
+input{
+    padding:10px;
+    border-top-right-radius:10px;
+    border-bottom-left-radius:10px;
+}
+textarea{
+    border-top-right-radius:10px;
+    border-bottom-left-radius:10px;
+    
+}
+form{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: rgb(226, 205, 205);
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+}
+form div{
+    display: flex;
+    flex-direction: column;
+    
+   
+}
+form div input {
+    margin: 10px;
+}
+#input-sujet{
+    margin:10px 0;   
+}
+form button{
+    margin:5px 0;
+    padding: 5px;
+    background-color: rgb(93, 184, 93);
+}
+/* -------------------------table---------------------- */
+table{
+    margin-bottom: 20px;
+}
+table, th, td {
+    border: 1px solid black; 
+    border-collapse:collapse;
+}
+.tableau3{
+    background-color:rgba(229, 229, 229);
+}
+.tableau4{
+    background-color: rgb(131, 129, 129);
+}
+/* ........................TECHNO pris en charge.............. */
+#ilustrator{
+    display: flex;
+    /* justify-content: space-around; */
+}
+
+#ilustrator div img{
+    width: 70px;
+    height: auto;
+}
+
+#ilustrator div p{
+    justify-content: center;
+    /* padding-top: 20px; */
+    text-align: justify;
+}
+
+#indesgn{
+    display: flex;
+    /* justify-content: space-around; */
+    flex-direction: row-reverse;
+}
+
+#indesgn div img{
+    width: 70px;
+    height: auto;
+    border:3px solid white;
+}
+
+#indesgn div p{
+    justify-content: center;
+    /* padding-top: 20px; */
+    text-align: justify;
+}
+
+#ps{
+    display: flex;
+    /* justify-content: space-around;
+    justify-content: space-around; */
+}
+
+#ps div img{
+    width: 70px;
+    height: auto;
+    border:3px solid white;
+}
+
+#ps div p{
+    padding-top: 20px;
+    text-align: justify;
+}
+
+#back1 {
+    text-align: left;
+    border: 1px solid black;
+    border-width:1px 2px 3px 2px;
+    width: 150px;
+    height: 300px;;
+    background-color:rgba(229, 229, 229);
+    border-bottom-left-radius:20px;
+    border-bottom-right-radius:20px;
+ border-style:solid ;
+ border-color:black;
+}
+#back1 ul{
+    align-items: center;
+   
+    flex-direction: column;
+    text-align: end;
+    margin: 40px 10px;
+}
+
+
+#back1 h3{
+    padding-bottom: 30px;
+    background-color:rgba(239, 176, 65);
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    text-align: center;
+    
+} 
+#back1 ul li{
+    list-style-type: none;
+    margin:15px 0;
+    
+}
+#back1 i.fas{
+    color:rgba(239, 176, 65);
+}
+#back {
+    text-align: left;
+    border: 1px solid black;
+    border-width:1px 2px 3px 2px;
+    width: 150px;
+    height: 300px;;
+    background-color:rgba(229, 229, 229);
+    border-bottom-left-radius:20px;
+    border-bottom-right-radius:20px;
+ border-style:solid ;
+ border-color:black;
+}
+#back ul{
+    align-items: center;
+    
+    flex-direction: column;
+    text-align: end;
+    margin: 5px 40px;
+}
+
+
+#back h3{
+    padding-bottom: 30px;
+    background-color:rgba(239, 176, 65);
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    text-align: center;
+    
+} 
+#back ul li{
+    list-style-type: none;
+    margin:15px 0;
+    
+}
+#back i.fas{
+    color:rgba(239, 176, 65);
+}
+
+#data {
+    text-align: left;
+    border: 1px solid black;
+    border-width:1px 2px 3px 2px;
+    width: 150px;
+    height: 300px;;
+    background-color:rgba(229, 229, 229);
+    border-bottom-left-radius:20px;
+    border-bottom-right-radius:20px;
+ border-style:solid ;
+ border-color:black;
+}
+#data ul{
+    align-items: center;
+    
+    flex-direction: column;
+    text-align: end;
+    margin: 25px 30px;
+}
+
+
+#data h3{
+    padding-bottom: 30px;
+    background-color:rgba(24, 140, 198);
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    text-align: center;
+    
+} 
+#data ul li{
+    list-style-type: none;
+    margin:15px 0;
+    
+}
+#data i.fas{
+    color:rgba(24, 140, 198);
+}
+.fas{
+    justify-content: flex-start;
+    color: red;
+    
+    }
+
+.fat{
+   
+padding-right: 10px;
+}
+
+#front {
+    text-align: left;
+    border: 1px solid black;
+    border-width:1px 2px 3px 2px;
+    width: 150px;
+    height: 300px;;
+    background-color:rgba(229, 229, 229);
+    border-bottom-left-radius:20px;
+    border-bottom-right-radius:20px;
+ border-style:solid ;
+ border-color:black;
+ 
+}
+.lol{
+    /* margin-top:20px; */
+    display: flex;
+justify-content: flex-start;
+}
+.lol li{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+#front ul{
+    align-items: center;
+    
+    flex-direction: column;
+    text-align: end;
+      margin: 40px 20px;
+}
+
+
+#front h3{
+    padding-bottom: 30px;
+    background-color: red;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    text-align: center;
+    
+} 
+#front ul li{
+    list-style-type: none;
+    margin:15px 0;
+    
+}
+#lol{
+    text-align: center;
+    width :100%;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+  }
+
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 400px;
+    background-color: black;
+    color: #fff;
+    text-align: center;           /* ce paragraphe décrit la taille de la bulle qui apparait pour cacher un texte*/
+    border-radius: 6px;
+    padding: 5px 0;
+    /* margin:0 0 0 90px; */
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    left: 110%;
+  }
+  
+  .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 10%;
+     right: 100%;                /* ce paragraphe explique la pointe de la bulle pour le tableau dans dev web */
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent black transparent transparent;
+  }
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+body style { text-align:center"
+}
+#tech{
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        /* flex-direction: row;
+        text-align: center;
+        align-items: baseline; */
+        background-color: rgb(138, 136, 136);
+        align-items: flex-end;
+        margin:20px;
+        padding:10px;
+    
+}
+#techno{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* flex-direction: row;
+    text-align: center;
+    align-items: baseline; */
+    background-color: rgb(138, 136, 136);
+    align-items: flex-end;
+    margin-bottom:20px;
+    padding:10px;
+}
+#techno #titre{
+    margin: 20px;
+}
+#titre{
+    width:100%;
+}
+/* ---------------------------------------FOOTER------------------- */
+
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background: black;
+    color: white;
+
+}
+#newsletter{
+    width: 400px;
+}
+#newsletter h3,p,input{
+    margin: 10px;
+    
+}
+#bouton-footer{
+    font-size: 20px;
+    padding: 3px;
+    background-color: rgb(73, 73, 170);
+
+}
+#bouton-footer:hover{
+    cursor: pointer;
+    background-color: white;
+}
+#partenaires {
+    display: flex;
+    flex-direction: column;
+}
+#partenaires img{
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    margin: 10px;
+    -webkit-transform: scale(1.25);
+	transform: scale(1.25);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+#partenaires img:hover{
+    -webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+#partenaires h3{
+    margin: 10px;
+}
+#img-partenaires {
+    display: flex;
+    margin: 15px;
+}
+.hidden {
+    display: none;
+}
+
+/* ---------------------RESPONSIVE---------- */
+
+
+
+
+@media screen and (max-width:1700px){
+    #banner{
+        display: none;
+    }
+    #banner-dev-web{
+        display: none;
+    }
+       /* ----IMG LION DEV WEB PAGE---- */
+
+    #img-lion{
+        height: 300px;
+        widows: 350px;
+    }
+}
+
+@media screen and (max-width:900px) {
+    #wrapper{
+        width: 80%;
+    }                                                              /* responsive a 900px */
+    header{
+        background-color: rgb(185, 184, 184);
+    }
+    header img{
+        display: none;
+    }
+    nav a {
+        margin: 0;
+        padding: 0;
+    }
+    /* page dev web */
+    section img{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 654px){
+    .btn:not(:last-child) {display: none;}
+    .topnav a.icon {
+       float: left;                                 /*  la responsive  prise sur w3 school*/
+      display: block;
+      background-color: rgb(0, 146, 243);
+      border-radius: 2px;
+    } 
+    #boutton-redirection button .btn{
+        font-size: 25px;
+        height: 150px;
+        width: 300px;
+        padding: 10px;
+        border:3px solid transparent;
+        
+    }
+
+}
+
+
+
+
+@media screen and (max-width: 654px) {
+    .btn.responsive {position: relative;}
+    .btn.responsive .icon {
+      position: absolute;
+      right: 0;                                              /*suite la responsive prise sur w3 scool*/
+      top: 0;
+    }
+    .btn.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .btn{
+        display: none;
+    }
+
+  } 
